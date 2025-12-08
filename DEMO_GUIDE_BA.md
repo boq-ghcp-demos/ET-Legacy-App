@@ -20,7 +20,7 @@ Sarah is a business analyst working with an existing VB.NET and C# codebase (Exp
 
 **Prompt for Copilot Chat:**
 ```
-What is this project about? give a summary and tech stack details briefly
+What is this project about? give a summary and tech stack details briefly and also start the application from command line
 ```
 
 ```
@@ -76,13 +76,13 @@ Write this for a business analyst or product manager, not a developer.
 
 **Prompt for Copilot Chat:**
 ```
-Create a comprehensive end-user guide (name as USER_GUIDE.md) for the Expense Tracker application. Include:
+Create a comprehensive end-user guide (name as ET_USER_GUIDE.md) for the Expense Tracker application. Include:
 - Getting started (registration and login)
 - How to add expenses (one-time and recurring)
 - Using filters and search
 - Understanding categories and currency (AUD)
 - Managing settings
-- FAQ section with 15-20 common questions users might have about
+- FAQ section with 5-10 common questions users might have about
 Use screenshots placeholders and step-by-step instructions. Write for non-technical end users.
 ```
 ---
@@ -105,7 +105,7 @@ Analyze the ExpenseTracker VB.NET desktop application and create a comprehensive
 4. Technical requirements (functional for all the features AS IT IS)
 
 Use language suitable for technical teams.
-Format as a professional markdown document.
+Format as a professional markdown document with a name of ET_Modernization_Solution_Proposal.md.
 ```
 
 ---
