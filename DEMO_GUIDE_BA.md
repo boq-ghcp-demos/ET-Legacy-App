@@ -80,7 +80,7 @@ Create a comprehensive end-user guide (name as ET_USER_GUIDE.md) for the Expense
 - Getting started (registration and login)
 - How to add expenses (one-time and recurring)
 - Using filters and search
-- Understanding categories and currency (AUD)
+- Understanding categories
 - Managing settings
 - FAQ section with 5-10 common questions users might have about
 Use screenshots placeholders and step-by-step instructions. Write for non-technical end users.
@@ -95,17 +95,13 @@ Use screenshots placeholders and step-by-step instructions. Write for non-techni
 
 **Prompt for Copilot Chat:**
 ```
-Analyze the ExpenseTracker VB.NET desktop application and create a comprehensive modernization proposal document(name as ExpenseTracker_Modernization_Proposal.md) for converting it to a C# ASP.NET Core web application. Include:
+Analyze the ExpenseTracker VB.NET desktop application and create a comprehensive modernization plan document(name as ET_Modernization_Solution_Plan.md) for converting it to a C# ASP.NET Core web application. Include:
 
-Analyze the ExpenseTracker VB.NET desktop application and create a comprehensive modernization  design for converting it to a C# /.Net web application. Include:
-
-1. Executive summary with key benefits
+1. Executive summary
 2. Current state analysis (technology stack, features, limitations)
 3. Proposed solution architecture (monolith app, with SQL light inmemory database and form based authentication)
 4. Technical requirements (functional for all the features AS IT IS)
-
-Use language suitable for technical teams.
-Format as a professional markdown document with a name of ET_Modernization_Solution_Proposal.md.
+Use language suitable for technical teams.Format as a professional markdown document
 ```
 
 ---
