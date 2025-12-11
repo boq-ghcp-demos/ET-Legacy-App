@@ -106,6 +106,10 @@ This document outlines a challenge to modernize the legacy Expense Tracker deskt
 *   **Browser Automation:**
     *   Create a full regression test suite using a framework like Selenium, Cypress, or Playwright.
     *   Automate testing for all user stories and critical paths.
+### 4.2. No major bugs or vulnerabilities in the final release
+**Goal:** Deliver a high-quality application.
+*   Conduct thorough testing cycles.
+*   Address and resolve all identified bugs and vulnerabilities before release. 
 
 ## 5. Deployment
 
