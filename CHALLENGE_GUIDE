@@ -72,6 +72,7 @@ This document outlines a challenge to modernize the legacy Expense Tracker deskt
 
 **Goal:** Replicate the existing application's features in the new web application.
 
+*   Scaffold a new application all capabilities like logging, database integration(SQL Lite) and best practices.
 *   Implement user registration, login, and authentication.
 *   Develop the expense management features (add, edit, delete).
 *   Create the main dashboard to display expenses.
