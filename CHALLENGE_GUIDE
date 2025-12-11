@@ -1,0 +1,130 @@
+# Modernization Challenge: Migrating the Legacy Expense Tracker
+
+This document outlines a challenge to modernize the legacy Expense Tracker desktop application into a modern, web-based solution with a responsive design for both desktop and mobile use.
+
+## 1. Discovery
+
+### 1.1. Understand the Current State
+
+**Objective:** Create a comprehensive understanding of the existing application.
+
+**Artifact:** "Current State Analysis" document.
+
+**Tasks:**
+
+*   **Functionality:** Document all features of the current application.
+    *   User registration and login.
+    *   Expense creation, editing, and deletion.
+    *   Category management.
+    *   Dashboard view.
+    *   Settings and user preferences.
+*   **Tech Stack:** Analyze the current technology stack.
+    *   **Language:** VB.NET
+    *   **Framework:** Windows Forms
+    *   **Database:** Local file-based (likely SQLite or similar, investigate `DatabaseHelper.vb`).
+    *   **External Components:** Note any COBOL integration (`au-tax-calculator.cob`).
+*   **Business Validations:** Identify all business rules and validation logic.
+    *   Look into the `Forms` and `Services` directories to understand the logic.
+
+### 1.2. Define the Target State Architecture
+
+**Objective:** Design the architecture for the new application.
+
+**Artifact:** "Target State Architecture" document.
+
+**Tasks:**
+
+*   **Technology Stack:** Choose a modern stack (e.g., .NET with Blazor/React, or Java with Spring Boot/React).
+*   **Architecture Diagrams:**
+    *   **Sequence Diagrams:** Create diagrams for key processes like user login, expense submission, and data retrieval.
+    *   **Flow Charts:** Illustrate the overall application flow.
+*   **Data Models:** Design the new database schema.
+    *   Create an ERD (Entity-Relationship Diagram) for the target database.
+
+## 2. Planning
+
+### 2.1. Create Epics and User Stories
+
+**Objective:** Break down the modernization effort into manageable work items.
+
+**Artifact:** Product Backlog in Azure DevOps (or similar tool).
+
+**Epics:**
+
+*   **Epic 1: Core Functionality (As-Is)**
+*   **Epic 2: Enhancements**
+*   **Epic 3: Testing and Quality Assurance**
+*   **Epic 4: DevOps and Deployment**
+
+**User Stories (Examples):**
+
+*   **Epic 1:**
+    *   As a user, I want to register for a new account so I can start tracking my expenses.
+    *   As a user, I want to log in to my account securely.
+    *   As a user, I want to add a new expense with details like amount, category, and date.
+*   **Epic 2:**
+    *   As a user, I want to see my expenses in different currencies.
+    *   As a user, I want the application to calculate taxes on my expenses.
+
+## 3. Implementation
+
+### Iteration 1: As-Is Functionality
+
+**Goal:** Replicate the existing application's features in the new web application.
+
+*   Implement user registration, login, and authentication.
+*   Develop the expense management features (add, edit, delete).
+*   Create the main dashboard to display expenses.
+*   Ensure the UI is modern, elegant, and responsive.
+
+### Iteration 2: Currency Conversion
+
+**Goal:** Enhance the application with currency conversion capabilities.
+
+*   Integrate with the exchangerate-api.com API.
+*   Allow users to select a currency for their expenses.
+*   Display converted expense amounts.
+
+### Iteration 3: Tax Computation
+
+**Goal:** Integrate the existing COBOL tax calculation logic.
+
+*   Analyze the `au-tax-calculator.cob` program.
+*   Create a wrapper or service (e.g., a microservice or API) to expose the COBOL logic to the new application.
+*   Integrate this service to calculate and display taxes on expenses.
+
+## 4. Testing
+
+### 4.1. Unit and Regression Testing
+
+**Goal:** Ensure the application is robust and reliable.
+
+*   **Unit Tests:**
+    *   Write unit tests for all services and business logic.
+    *   Aim for at least 80% code coverage.
+*   **Browser Automation:**
+    *   Create a full regression test suite using a framework like Selenium, Cypress, or Playwright.
+    *   Automate testing for all user stories and critical paths.
+
+## 5. Deployment
+
+### 5.1. CI/CD Pipeline
+
+**Goal:** Automate the deployment process.
+
+*   Create a CI/CD pipeline in Azure DevOps.
+*   Configure the pipeline to:
+    *   Build the application.
+    *   Run unit tests.
+    *   Package the application (e.g., into a Docker container).
+    *   Deploy the application to a Kubernetes cluster.
+
+## 6. Documentation
+
+### 6.1. End-User Guide
+
+**Goal:** Provide users with clear instructions on how to use the new application.
+
+*   Create a comprehensive end-user guide.
+*   Include screenshots and step-by-step instructions for all features.
+*   Publish the guide in an accessible format (e.g., a web page or PDF).
