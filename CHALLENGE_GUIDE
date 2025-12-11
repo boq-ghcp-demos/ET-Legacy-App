@@ -83,7 +83,7 @@ This document outlines a challenge to modernize the legacy Expense Tracker deskt
 **Goal:** Enhance the application with currency conversion capabilities.
 
 *   Integrate with the exchangerate-api.com API.
-*   Allow users to select a currency for their expenses.
+*   Allow users to select a currency for their expenses ( sample API https://www.exchangerate-api.com/).
 *   Display converted expense amounts.
 
 ### Iteration 3: Tax Computation
